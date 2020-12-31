@@ -7,4 +7,12 @@ def index(request):
 
 
 def test(request):
-    return HttpResponse("Тестовая страница")
+    return render(request, 'tutorial/test.html')
+
+
+def about(request):
+    return render(request, 'tutorial/about.html')
+
+
+def create(request):
+    return render(request, 'tutorial/create.html')
